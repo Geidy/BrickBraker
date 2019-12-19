@@ -28,7 +28,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 	private MapGenerator map;
 
 	public GamePlay() {
-		map = new MapGenerator(3, 7);
+		map = new MapGenerator(3, 7);  //rows and cols
 		addKeyListener(this);
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
@@ -68,7 +68,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 			ballydir = 0;
 			g.setColor(Color.RED);
 			g.setFont(new Font("Serif", Font.BOLD, 30));
-			g.drawString("You Won, Score:", 190, 300);
+			g.drawString("You Won, Score:", 300, 30);
 			g.setFont(new Font("Serif", Font.BOLD, 20));
 			g.drawString("Press Enter to Restart", 230, 350);			
 			
@@ -79,7 +79,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 			ballydir = 0;
 			g.setColor(Color.RED);
 			g.setFont(new Font("Serif", Font.BOLD, 30));
-			g.drawString("Game Over, Score:", 190, 300);
+			g.drawString("Game Over, Score:", 300, 30);
 			g.setFont(new Font("Serif", Font.BOLD, 20));
 			g.drawString("Press Enter to Restart", 230, 350);			
 			
@@ -187,13 +187,13 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 
 	private void moveRight() {
 		play = true;
-		playerX += 20;
+		playerX += 30;
 
 	}
 
 	private void moveLeft() {
 		play = true;
-		playerX -= 20;
+		playerX -= 30;
 
 	}
 
