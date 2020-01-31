@@ -17,8 +17,8 @@ public class MapGenerator {
 			
 		}
 		
-		brickWidth = 540/row;
-		brickHeight = 150/col;
+		brickWidth = 540/col;
+		brickHeight = 150/row;
 				
 	}
 	

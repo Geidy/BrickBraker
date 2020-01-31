@@ -62,7 +62,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 		g.setColor(Color.yellow);
 		g.fillRect(ballposX, ballposY, 20, 20); 
 		
-		if(totalBricks <= 0) {
+		if(totalBricks <= 10) {
 			play = false;
 			ballxdir = 0;
 			ballydir = 0;
